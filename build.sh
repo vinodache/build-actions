@@ -10,4 +10,7 @@ fi
 
 script_path=$(cd $(dirname ${0}); pwd)
 cp -r ${script_path}/fastlane ./
+echo "Current directory `pwd`"
 fastlane export_ipa
+echo "Current directory `pwd`"
+fastlane pilot upload
